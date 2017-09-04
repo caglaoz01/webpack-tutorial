@@ -1,0 +1,30 @@
+{
+  "name": "webpack-tutorial",
+  "version": "1.0.0",
+  "description": "my first time with Webpack",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "webpack": "^2.1.0-beta.22"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf assets",
+    "build": "node_modules/.bin/webpack --progress --colors",
+    "watch": "node_modules/.bin/webpack --progress --colors --watch",
+    "production" : "npm run clean && NODE_ENV=production npm run build --"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caglaoz01/webpack-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caglaoz01/webpack-tutorial/issues"
+  },
+  "homepage": "https://github.com/caglaoz01/webpack-tutorial#readme"
+}
